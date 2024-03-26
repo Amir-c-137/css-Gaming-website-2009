@@ -1,0 +1,294 @@
+/* 1. don't modify this style */
+@font-face {
+    font-family: poppinsBold;
+    src: url("..//assets/fonts/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: poppinsRegular;
+    src: url("..//assets/fonts/Poppins-Regular.ttf");
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  
+    box-sizing: border-box;
+    font-family: poppinsRegular;
+  }
+  
+  /* 2. we use :root for default variables */
+  :root {
+    /* --"somekey-attr": "somevalue" i.e : */
+    --black-700: #000;
+    --blueGradiant: #3b2a9f;
+    --primary-100: #5141aa;
+    --secondary: #fa8305;
+    --box_bg: #1c140f;
+  }
+  /* good luck */
+  
+  body {
+    background-color: var(--blueGradiant);
+  }
+  /* ----------HEADER---------- */
+  .header {
+    background-color: var(--blueGradiant);
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .head_Item {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    transition: ease 150ms;
+  }
+
+  .head_btn {
+    color: white;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    transition: ease 150ms;
+  }
+
+  .current_Item {
+    font-family: poppinsBold;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    padding-bottom: 6px;
+    border-bottom: var(--secondary);
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-radius: 2px;
+    transition: ease 150ms;
+  }
+
+  /* ----------MAIN---------- */
+  .upper_Main {
+    background-color: var(--blueGradiant);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+    margin-bottom: 20px;
+    gap: 50px;
+  }
+  .h1-UperMain {
+    font-family: poppinsBold;
+    font-size: 50px;
+    width: 500px;
+    margin: 10px 0px;
+  }
+  .p-UperMain {
+    width: 450px;
+    margin-bottom: 15px;
+  }
+  .big_image {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  .color_Page {
+    color: var(--secondary);
+  }
+  .btn_GetTouch {
+    color: white;
+    padding: 10px 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 20px;
+    transition: 150ms;
+  }
+
+  /* ----------SECTION 2---------- */
+  .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title-Section2 {
+    color: white;
+    margin-right: 730px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: poppinsBold;
+  }
+  .card-Manager {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+  }
+  .card {
+    color: white;
+    background-color: var(--box_bg);
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    transition: 150ms;
+  }
+
+  .btn_Card1 {
+    border-style: none;
+    background-color: rgba(176, 0, 220, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    transition: ease 80ms;
+  }
+
+  .btn_Card2 {
+    border-style: none;
+    background-color: rgba(220, 66, 0, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    transition: ease 80ms;
+  }
+
+  .btn_Card3 {
+    border-style: none;
+    background-color: rgba(0, 220, 141, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    transition: ease 80ms;
+  }
+
+  /* ----------SECTION 3---------- */
+  .section3 {
+    background-color: var(--box_bg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 50px 0px;
+  }
+  .text-Section3 {
+    width: 35%;
+    margin-left: 75px;
+  }
+  .image-Section3 {
+    height: 80%;
+    max-width: 45%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  /* ----------SECTION 4---------- */
+  .title-Section4 {
+    margin-right: 70%;
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: poppinsBold;
+  }
+  .section4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+  }
+  .mini_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--box_bg);
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    border-radius: 30px;
+    transition: 150ms;
+  }
+  .charecter {
+    width: 180px;
+    margin-bottom: -20px;
+  }
+  .p-Section4 {
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  /* ----------SECTION 5---------- */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main_Section5 {
+    margin-top: 50px;
+    margin-right: 35%;
+    max-width: 50%;
+  }
+  .card_Black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box_bg);
+    padding: 30px 60px;
+    border-radius: 20px;
+    max-width: 90%;
+    gap: 50px;
+  }
+  .search_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 22px;
+    border-radius: 15px;
+    gap: 20px;
+  }
+  .search-input {
+    border-style: none;
+    font-size: 15px;
+    height: 35px;
+    width: 300px;
+  }
+  .continue_btn {
+    color: white;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    transition: ease 150ms;
+  }
+
+  /* ----------Footer---------- */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding: 40px 100px;
+  }
+  .internet {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 100%;
+    margin: 5px;
+    cursor: pointer;
+    transition: ease 50ms;
+  }
+
+  
