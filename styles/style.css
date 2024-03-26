@@ -10,11 +10,175 @@
 :root {
   /* --"somekey-attr": "somevalue" i.e : */
   --black-700: #000;
+  --blueGradiant: #3b2a9f;
+  --primary-100: #5141aa;
+  --secondary: #fa8305;
+  --box_bg: #1c140f;
 }
-/* 3. and we use it like this */
-.elementOne {
-  /* var(--"somekey-attr") */
-  background-color: var(--black-700);
+/* good luck */
+
+@font-face {
+  font-family: poppinsBold;
+  src: url("..//assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: poppinsRegular;
+  src: url("..//assets/fonts/Poppins-Regular.ttf");
 }
 
-/* good luck */
+body {
+  background-color: var(--blueGradiant);
+}
+
+.header {
+  background-color: var(--blueGradiant);
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_Items {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  transition: ease 150ms;
+}
+
+.header_btn {
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 8px;
+  transition: ease 150ms;
+}
+
+.Item {
+  font-family: poppinsBold;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  padding-bottom: 6px;
+  border-bottom: var(--secondary);
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-radius: 2px;
+  transition: ease 150ms;
+}
+
+.up-Main {
+  background-color: var(--blueGradiant);
+  color: white;
+  display: flex;
+  padding: 40px 0px;
+  margin-bottom: 20px;
+  gap: 10%;
+}
+.up-Main-h1 {
+  font-family: poppinsBold;
+  font-size: 50px;
+  width: 500px;
+  margin-bottom: 30px;
+}
+.up-Main-p {
+  width: 400px;
+  margin-bottom: 30px;
+}
+.Main-picture {
+  position: relative;
+  left: 100px;
+  width: 500px;
+}
+.Mini-picture {
+  position: absolute;
+  top: 80px;
+  left: 320px;
+  width: 70px;
+}
+.Second-mini-picture {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 100px;
+}
+.Third-mini-picture {
+  position: absolute;
+  top: 230px;
+  width: 90px;
+}
+.povered_me {
+  font-family: poppinsBold;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+.btn_GetDetails {
+  color: white;
+  padding: 10px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 20px;
+  transition: 150ms;
+}
+
+.title_Section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Second-section-h1 {
+  color: white;
+  font-family: poppinsBold;
+  font-size: 30px;
+}
+.btn_SeeAll {
+  background-color: var(--primary-100);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease 150ms;
+}
+
+.image_Cards {
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: ease 300ms;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+.card-Subtitle {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.single-Card {
+  margin: 10px;
+}
+

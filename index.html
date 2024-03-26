@@ -3,27 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- description -->
-    <meta name="description" content="html practice, a game website using css for style"/>
-    <!-- link style -->
+    <meta name="description" content="Gaming Website">
     <link rel="stylesheet" href="styles/style.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/joy_stick%201.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/images/figma.png" type="image/x-icon">
     <title>GAMiFY</title>
   </head>
   <body>
-    <header>
-      <h1 id="logo">LOGO</h1>
-      <ul class="list">
-        <li class="nav"><a href="index.html" style="text-decoration: none; color: white">Home</a>
-          <img class="selected" src="assets/images/active-bar.svg">
-        </li>
-        <li class="nav"><a href="games.html" style="text-decoration: none; color: white">Games</a></li>
-        <li class="nav">AboutUs</li>
-        <li class="nav">News</li>
-      </ul>
-      <p id="theme">Light</p>
+    <!--Header-->
+    <header class="header">
+      <h1 style="font-family: poppinsBold; color: white;">LOGO</h1>
+      <div>
+        <a class="Item" href="index.html">Home</a>
+        <a class="header_Items" href="games.html">Games</a>
+        <a class="header_Items" href="#foot">About us</a>
+        <a class="header_Items" href="">News</a>
+        <a href=""><button class="header_btn" >Page Theme</button></a>
+      </div>
     </header>
 
+    <!--Main-->
+
+    <main>
+      <section style="display: flex; justify-content: center;">
+        <div class="up-Main">
+          <div class="up-Main-tablet">
+            <p class="povered_me">Proverd By Izad</p>
+            <h1 class="up-Main-h1">Work That We Produce For Our Clients</h1>
+            <p class="up-Main-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+            <a href="games.html"><button class="btn_GetDetails">Get more details</button></a>
+          </div>
+          <div style="position: relative;">
+            <img class="Third-mini-picture" src="assets/images/unity.png" alt="">
+            <img class="Second-mini-picture" src="assets/images/cry.png" alt="">
+            <img class="Mini-picture" src="assets/images/unreal.png" alt="">
+            <img class="Main-picture" src="assets/images/joy-stick.png" alt="">
+          </div>
+        </div>
+      </section>
+    
+      <section>
+        <div class="title_Section">
+          <h1 class="Second-section-h1">Currently Trending Games</h1>
+          <a href=""><button class="btn_SeeAll">SEE ALL </button></a>
+        </div>
+        <div style="margin-top: 60px;">
+          <ul class="cards">
+            <li class="single-Card">
+              <article class="card">
+                <img class="image_Cards" src="assets/images/Rectangle 23.png" alt="">
+                <div class="card-Subtitle">
+                  <img src="assets/images/fire.png" alt="" width="30px">
+                  <h1 style="margin: 5px;">40 Followers</h1>
+                </div>
+              </article>
+            </li>
+            <li class="single-Card">
+              <article class="card">
+                <img class="image_Cards" src="assets/images/Rectangle 24.png" alt="">
+                <div class="card-Subtitle">
+                  <img src="assets/images/fire.png" alt="" width="30px">
+                  <h1 style="margin: 5px;">40 Followers</h1>
+                </div>
+              </article>
+            </li>
+            <li class="single-Card">
+              <article class="card">
+                <img class="image_Cards" src="assets/images/Rectangle 25.png" alt="">
+                <div class="card-Subtitle">
+                  <img src="assets/images/fire.png" alt="" width="30px">
+                  <h1 style="margin: 5px;">40 Followers</h1>
+                </div>
+              </article>
+            </li>
+            <li class="single-Card">
+              <article class="card">
+                <img class="image_Cards" src="assets/images/Rectangle 26.png" alt="">
+                <div class="card-Subtitle">
+                  <img src="assets/images/fire.png" alt="" width="30px">
+                  <h1 style="margin: 5px;">40 Followers</h1>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    
   </body>
 </html>
