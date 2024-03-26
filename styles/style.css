@@ -296,3 +296,20 @@ body {
   border-radius: 8px;
 }
 
+
+/* ----------Footer---------- */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  padding: 40px;
+}
+.internet {
+  background-color: white;
+  padding: 10px;
+  width: 50px;
+  border-radius: 100%;
+  margin: 8px;
+  cursor: pointer;
+}
+
